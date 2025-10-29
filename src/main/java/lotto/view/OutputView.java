@@ -14,10 +14,10 @@ public class OutputView {
 
     public void printResult(LottoResult result) {
         System.out.println("\n당첨 통계");
-        System.out.println("---------");
+        System.out.println("---");
         result.getResults().forEach((rank, count) ->
                 System.out.println(rank.getDescription() + " - " + count + "개")
         );
-        System.out.println("총 수익률: " + result.getProfitRate() + "%");
+        System.out.println("총 수익률은 " + result.getProfitRate() + "%입니다.");
     }
 }
